@@ -68,14 +68,14 @@
         liNode.appendChild(txtNode);
         output.appendChild(liNode);
 
-        document.getElementById('todo-input').focus();
-        document.getElementById('todo-input').value = "";
+        input.focus();
+        input.value = "";
       }
 
       input.addEventListener("keypress", function(event) {
         if (event.key === "Enter") {
           event.preventDefault();
-          document.getElementById("todo-submit").click();
+          button.click();
         }
       });
 
